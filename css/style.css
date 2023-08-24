@@ -25,9 +25,50 @@ body {
   background: #141921;
 }
 
+.navbar-left ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 20px 0;  
+}
 
+.navbarleft li{
+  margin: 5px 0;
+}
 
 /* STYLE */
+
+h2, h4, h5 {
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(153, 153, 153, .7);
+  transition: color .5s;
+}
+
+a:hover {
+  color: #fff;
+}
+
 /* BUTTONS */
 /* UTILITIES */
 
@@ -40,10 +81,64 @@ body {
   display: flex;
   flex-basis: 230px;
   flex-direction: column;
+  padding-top: 20px;
+  background-color: black;
 }
 
 .navbar-left-menu {
   flex-grow: 1;
+}
+
+.navbar-left-menu h5 {
+  margin-left: 20px;
+}
+
+.navbar-left-menu .navbar-logo {
+  margin-left: 20px;
+  max-width: 130px;
+}
+
+.navbar-left-menu .navbar-logo.mobile {
+  height: 40px;
+  display: none;
+}
+
+.navbar-left-menu ul li{
+  padding: 0 20px;
+  border-left: solid 1px transparent;
+  transition: border .5s;
+}
+
+.navbar-left-menu ul li:hover {
+  border-left: solid 4px #81b71a;
+}
+
+.navbar-left-menu ul li .fa-plus {
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.navbar-left-menu ul img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbar-left-menu .nav span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-left-user {
+  padding: 20px 20px 0;
+}
+
+.navbar-left-menu ul li {
+  padding: 0 20px;
 }
 
 .navbar-left-user .install {
@@ -53,6 +148,43 @@ body {
 
 .navbar-left-user .user {
   display: flex;
+  align-items: center;
+}
+
+.navbar-left-user i {
+  margin-right: 5px;
+}
+
+.navbar-left-user .install {
+  padding-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar-left-user .user {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #999;
+  padding: 15px 0 10px;
+}
+
+.navbar-left-user .user img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  background: #999;
+  border-radius: 50%;
+}
+
+.navbar-left-user .user h6 {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+}
+
+.user .a{
   align-items: center;
 }
 
