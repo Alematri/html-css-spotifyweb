@@ -9,7 +9,8 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: rgba(153, 153, 153, .7);
 }
 
@@ -32,7 +33,7 @@ body {
   margin: 20px 0;  
 }
 
-.navbarleft li{
+.navbar-left li{
   margin: 5px 0;
 }
 
@@ -188,6 +189,12 @@ a:hover {
   align-items: center;
 }
 
+.playlist{
+  margin-bottom: 10px;
+  overflow-y: auto;
+  height: 60%;
+}
+
 /* SCROLL WINDOW */
 .scroll-container {
   position: relative;
@@ -266,12 +273,22 @@ ul.h-list {
 
 /* MEDIA QUERY */
 
+/* GENE */
+
 /* TABLET */
 
 @media screen and (max-width: 1024px){
 
   .cards-item {
     width: calc((100% / 4) - 20px);
+  }
+
+  h2{
+    font-size: 26px;
+  }
+
+  h4{
+    font-size: 18px;
   }
 
 }
@@ -285,5 +302,35 @@ ul.h-list {
 
   .cards-item {
     width: calc((100% / 2) - 20px);
+  }
+
+  .navbar-left {
+    flex-basis: 60px
+  }
+
+  .navbar-left-menu .nav span,
+  .navbar-left-menu h5,
+  .navbar-left-menu .playlist,
+  .navbar-left-user span,
+  .navbar-left-user h6,
+  .navbar-left-menu .navbar-logo.desktop {
+    display: none;
+  }
+
+  .navbar-left-user {
+    text-align: center;
+  }
+
+  .navbar-left-user .user {
+    border-top: none;
+  }
+
+  .navbar-left-user .user img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-left-menu .navbar-logo.mobile {
+    display: block;
   }
 }
