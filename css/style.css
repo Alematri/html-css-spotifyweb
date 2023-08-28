@@ -65,6 +65,7 @@ a:hover {
   border-radius: 10px;
   }
 
+
 /* UTILITIES */
 
 .txt-center {
@@ -92,6 +93,10 @@ ul.v-list {
   list-style: none;
   overflow-y: auto;
   padding-top: 10px;
+}
+
+.playlist{
+  max-height: 50%;
 }
 
 ul.v-list li {
@@ -153,6 +158,7 @@ ul.v-list li {
   padding-top: 20px;
   background: #000;
   max-height: calc(100vh - 90px);
+  overflow: hidden;
 }
 
 /* NAVBAR LEFT MENU */
@@ -219,7 +225,7 @@ ul.v-list li {
 /* NAVBAR LEFT USER */
 
 .navbar-left-user {
-  padding: 20px 20px 0;
+  padding: 0px 10px 0;
 }
 
 .navbar-left-user i {
@@ -710,13 +716,17 @@ ul.v-list li {
     flex-basis: 60px
   }
 
+  .v-list.nav{
+    overflow: hidden;
+  }
+
   .navbar-left-menu .nav span,
   .navbar-left-menu h5,
   .navbar-left-menu .playlist,
-  .navbar-left-user span,
   .navbar-left-menu .plus,
-  .navbar-left-user h6,
-  .navbar-left-menu .navbar-logo.desktop {
+  .navbar-left-menu .desktop,
+  .navbar-left-user span,
+  .navbar-left-user .hidden {
     display: none;
   }
 
@@ -728,13 +738,14 @@ ul.v-list li {
     border-top: none;
   }
 
-  .navbar-left-user .user img {
-    margin-right: 0;
+  .navbar-left-user .user .vertical-center {
     margin-bottom: 10px;
   }
 
   .navbar-left-menu .navbar-logo.mobile {
     display: block;
+    margin-left: 17px;
+    height: 35px;
   }
 
   /* SCROLLABLE CONTENT */
