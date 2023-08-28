@@ -90,9 +90,8 @@ ul.v-list {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 20px 0;
   overflow-y: auto;
-  max-height: 40%;
+  padding-top: 10px;
 }
 
 ul.v-list li {
@@ -142,6 +141,7 @@ ul.v-list li {
   flex-grow: 1;
   display: flex;
   background: #141921;
+  max-height: calc(100vh - 90px);
 }
 
 /* NAVBAR LEFT */
@@ -152,7 +152,7 @@ ul.v-list li {
   flex-direction: column;
   padding-top: 20px;
   background: #000;
-  /* max-height: 830px; */
+  max-height: calc(100vh - 90px);
 }
 
 /* NAVBAR LEFT MENU */
@@ -163,6 +163,7 @@ ul.v-list li {
 
 .navbar-left-menu h5 {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .navbar-left-menu .navbar-logo {
@@ -179,16 +180,19 @@ ul.v-list li {
   padding: 0 20px;
 }
 
-.navbar-left-menu ul li {
+.navbar-left-menu ul li,
+.navbar-left-menu .plus {
   border-left: solid 1px transparent;
   transition: border .5s;
 }
 
-.navbar-left-menu ul li:hover {
+.navbar-left-menu ul li:hover,
+.navbar-left-menu .plus:hover {
   border-left: solid 4px #81b71a;
 }
 
-.navbar-left-menu ul li.active {
+.navbar-left-menu ul li.active,
+.navbar-left-menu .plus:hover {
   border-left: solid 4px #81b71a;
 }
 
@@ -411,6 +415,11 @@ ul.v-list li {
   justify-content: space-between;
   align-items: center;
   background: #272727;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 /* PLAYER SONG */
@@ -705,6 +714,7 @@ ul.v-list li {
   .navbar-left-menu h5,
   .navbar-left-menu .playlist,
   .navbar-left-user span,
+  .navbar-left-menu .plus,
   .navbar-left-user h6,
   .navbar-left-menu .navbar-logo.desktop {
     display: none;
